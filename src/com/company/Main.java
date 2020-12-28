@@ -1,10 +1,9 @@
 package com.company;
 
-import javax.xml.transform.TransformerException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws ClientAccountException, BankAccountException, TransformerException {
+    public static void main(String[] args) throws ClientAccountException, BankAccountException {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\nTodo lo que pones en el login da igual menos el DNI (nom, cognom, numCuenta da igual)");
@@ -101,9 +100,8 @@ public class Main {
                             }
                         }
                     } else {
-                        throw new TransformerException(ExceptionMessage.ACCOUNT_NOT_FOUND);
+                        throw new BankAccountException(ExceptionMessage.ACCOUNT_NOT_FOUND);
                     }
-                    compteEstalvi.transferencia();
                 }
                 case 5 -> {
                     System.out.println("Informacion de Cuentas");
