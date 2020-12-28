@@ -59,7 +59,4 @@ public class CompteEstalvi {
     public List<Client> getLlista_usuaris() {
         return llista_usuaris;
     }
-
-    public void transferencia() {
-    }
 }
