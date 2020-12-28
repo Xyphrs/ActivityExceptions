@@ -12,8 +12,8 @@ public class Main {
         System.out.println("DNI -> 58585858Z");
         System.out.println("Cuentas para transferencia -> 123123A  |  123123B");
 
-        CompteEstalvi numComptetest1 = new CompteEstalvi("123123A");;
-        CompteEstalvi numComptetest2 = new CompteEstalvi("123123B");;
+        CompteEstalvi numComptetest1 = new CompteEstalvi("123123A");
+        CompteEstalvi numComptetest2 = new CompteEstalvi("123123B");
 
         System.out.println("\nBienvenido al la banca.");
         System.out.println("Por favor introduce tus datos de login");
@@ -34,7 +34,7 @@ public class Main {
         Client paco = new Client("Paco", "Jose", "58585858Z");
         Client maria = new Client("Maria", "Koko", "58585858Z");
 
-        System.out.println("Numero de la Cuenta Seleccionada: " + compteEstalvi.getNumCompte());
+        System.out.println("\nNumero de la Cuenta Seleccionada: " + compteEstalvi.getNumCompte());
         compteEstalvi.addUser(dani);
         compteEstalvi.addUser(paco);
         compteEstalvi.addUser(maria);
